@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omar Khaled Hussein - Computer & Systems Engineering student at Alexandria University. Portfolio showcasing full-stack development, machine learning, and Agile team leadership.">
+    <meta name="author" content="Omar Khaled Hussein">
+    <title>Omar Khaled Hussein | Portfolio</title>
+    
+    <!-- Google Fonts - Outfit for headings/body and JetBrains Mono for code/technical text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <!-- Header / Sticky Navigation -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#home" class="logo" aria-label="Omar Khaled Hussein Homepage">
+                <span class="logo-accent">&lt;</span> Omar <span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav id="navbar" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <!-- Mobile Navigation Toggle -->
+                <button id="mobile-nav-toggle" class="mobile-toggle-btn" aria-label="Toggle mobile menu" aria-controls="navbar" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content reveal-on-scroll">
+                    <span class="hero-greeting">Hi, my name is</span>
+                    <h1 class="hero-name">Omar Khaled Hussein</h1>
+                    <h2 class="hero-title">
+                        I'm a <span id="typewriter-text" class="text-accent"></span><span class="typewriter-cursor">|</span>
+                    </h2>
+                    <p class="hero-lead">
+                        Computer and Systems Engineering student at Alexandria University with hands-on experience across full-stack development, applied machine learning, and Agile software delivery.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-briefcase"></i> View Projects
+                        </a>
+                        <a href="OmarKhaledHussein_Resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-up-right-from-square"></i> Open CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-on-scroll delay-1">
+                    <div class="profile-card">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="card-title">developer.json</span>
+                        </div>
+                        <pre class="code-body"><code>{
+  <span class="key">"name"</span>: <span class="val">"Omar Khaled"</span>,
+  <span class="key">"location"</span>: <span class="val">"Alexandria, Egypt"</span>,
+  <span class="key">"focus"</span>: [
+    <span class="val">"Full-Stack Development"</span>,
+    <span class="val">"Machine Learning"</span>,
+    <span class="val">"Agile Delivery"</span>
+  ],
+  <span class="key">"status"</span>: <span class="val">"Open to Internships"</span>
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text reveal-on-scroll">
+                        <p>
+                            I am a Computer and Systems Engineering student at the Faculty of Engineering, Alexandria University, with a strong interest in full-stack development, applied machine learning, and Agile software delivery. I enjoy building scalable web applications, leading cross-functional teams, and solving real-world problems through software engineering.
+                        </p>
+                        <p>
+                            I have proven ability to ship production-quality features end-to-end — from authentication systems and REST APIs to responsive frontends — with strong communication skills and a fast-learning, detail-oriented mindset. I am highly motivated to grow in backend engineering, team leadership, and intelligent systems.
+                        </p>
+                    </div>
+                    
+                    <div class="education-card reveal-on-scroll delay-1">
+                        <div class="card-header-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <div class="education-details">
+                            <h4 class="university-name">Faculty of Engineering, Alexandria University</h4>
+                            <p class="degree-title">Bachelor of Computer and Systems Engineering</p>
+                            <div class="edu-meta-grid">
+                                <div class="edu-meta-item">
+                                    <span class="meta-label">Expected Graduation</span>
+                                    <span class="meta-value">2027</span>
+                                </div>
+                                <div class="edu-meta-item">
+                                    <span class="meta-label">CGPA</span>
+                                    <span class="meta-value highlight-gpa">3.79 / 4.00</span>
+                                </div>
+                                <div class="edu-meta-item">
+                                    <span class="meta-label">Batch Rank</span>
+                                    <span class="meta-value">6th of Batch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    
+                    <!-- Category 1: Programming Languages -->
+                    <div class="skills-category-card reveal-on-scroll">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <span class="skill-name"><i class="fa-brands fa-java text-blue"></i> Java</span>
+                            </li>
+                            <li>
+                                <span class="skill-name"><i class="fa-brands fa-python text-blue"></i> Python</span>
+                            </li>
+                            <li>
+                                <span class="skill-name"><i class="fa-solid fa-microchip text-blue"></i> C</span>
+                            </li>
+                            <li>
+                                <span class="skill-name"><i class="fa-brands fa-js text-yellow"></i> JavaScript</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Frameworks & Libraries -->
+                    <div class="skills-category-card reveal-on-scroll delay-1">
+                        <div class="category-header">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h3>Frameworks & Libraries</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <span class="skill-name"><i class="fa-brands fa-react text-cyan"></i> React</span>
+                            </li>
+                            <li>
+                                <span class="skill-name"><i class="fa-solid fa-leaf text-green"></i> Spring Boot</span>
+                            </li>
+                            <li>
+                                <span class="skill-name"><i class="fa-solid fa-database text-orange"></i> MySQL</span>
+                            </li>
+                            <li>
+                                <span class="skill-name"><i class="fa-brands fa-html5 text-orange"></i> HTML5 / CSS3</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: Tools & Practices -->
+                    <div class="skills-category-card reveal-on-scroll delay-2">
+                        <div class="category-header">
+                            <i class="fa-solid fa-gears"></i>
+                            <h3>Tools & Practices</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <span class="skill-name"><i class="fa-brands fa-docker text-blue"></i> Docker</span>
+                            </li>
+                            <li>
+                                <span class="skill-name"><i class="fa-brands fa-git-alt text-orange"></i> Git / GitHub</span>
+                            </li>
+                            <li>
+                                <span class="skill-name"><i class="fa-solid fa-people-group"></i> Agile / Scrum</span>
+                            </li>
+                            <li>
+                                <span class="skill-name"><i class="fa-solid fa-diagram-project"></i> Jira & REST APIs</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Projects</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: SmartLink -->
+                    <article class="project-card reveal-on-scroll">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <span class="project-tag">Full-Stack · Team of 6</span>
+                                <span class="project-icon"><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <h3 class="project-title">SmartLink</h3>
+                            <p class="project-desc">
+                                Professional networking platform connecting job seekers with recruiters — featuring profiles, job postings, social feed, real-time messaging, and AI-powered CV analysis. Served as Scrum Master for a 6-person Agile team.
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>FastAPI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/omar2004khaled/SmartLink" target="_blank" rel="noopener noreferrer" aria-label="View SmartLink code on GitHub">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Mail Server -->
+                    <article class="project-card reveal-on-scroll delay-1">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <span class="project-tag">Full-Stack · Team of 3</span>
+                                <span class="project-icon"><i class="fa-solid fa-envelope"></i></span>
+                            </div>
+                            <h3 class="project-title">Mail Server</h3>
+                            <p class="project-desc">
+                                Functional email client application with email management, attachment support, and contact management. Led frontend development — building the login system, email pages, and end-to-end attachment handling.
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Spring Boot</span>
+                                <span>REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/omar2004khaled/Web-Mail" target="_blank" rel="noopener noreferrer" aria-label="View Mail Server code on GitHub">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: TechShop -->
+                    <article class="project-card reveal-on-scroll">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <span class="project-tag">Full-Stack · Team of 2</span>
+                                <span class="project-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                            </div>
+                            <h3 class="project-title">TechShop</h3>
+                            <p class="project-desc">
+                                Full-stack e-commerce platform for computer hardware with product browsing, authentication, cart management, and product comparison. Built the main frontend interface and reusable UI components.
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Spring Boot</span>
+                                <span>Vite</span>
+                                <span>Axios</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/omar2004khaled/TechShop" target="_blank" rel="noopener noreferrer" aria-label="View TechShop code on GitHub">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Environmental Sound Classification -->
+                    <article class="project-card reveal-on-scroll delay-1">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-icon"><i class="fa-solid fa-wave-square"></i></span>
+                            </div>
+                            <h3 class="project-title">Environmental Sound Classification</h3>
+                            <p class="project-desc">
+                                Pattern recognition project applying spectral and MFCC-based feature extraction to classify environmental sound categories from audio recordings, with model training and evaluation in a reproducible Python notebook.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>MFCC</span>
+                                <span>Scikit-learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/omar2004khaled/Environmental-Sound-Classification" target="_blank" rel="noopener noreferrer" aria-label="View Environmental Sound Classification code on GitHub">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Get In Touch</h2>
+                <div class="contact-layout reveal-on-scroll">
+                    
+                    <div class="contact-info">
+                        <h3>Connect with Me</h3>
+                        <p class="contact-subtext">
+                            I am open to internship opportunities, collaboration, and learning. Feel free to reach out via email or check out my profiles online!
+                        </p>
+                        
+                        <div class="contact-links-grid">
+                            <a href="mailto:omar2004khaled@gmail.com" class="contact-item-card">
+                                <div class="icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="item-text">
+                                    <span class="item-label">Email</span>
+                                    <span class="item-val">omar2004khaled@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+201229163802" class="contact-item-card">
+                                <div class="icon-wrap"><i class="fa-solid fa-phone"></i></div>
+                                <div class="item-text">
+                                    <span class="item-label">Phone</span>
+                                    <span class="item-val">+20 122 916 3802</span>
+                                </div>
+                            </a>
+
+                            <a href="https://maps.google.com/?q=Alexandria,+Egypt" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+                                <div class="icon-wrap"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="item-text">
+                                    <span class="item-label">Location</span>
+                                    <span class="item-val">Alexandria, Egypt</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/omar2004khaled" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+                                <div class="icon-wrap"><i class="fa-brands fa-github"></i></div>
+                                <div class="item-text">
+                                    <span class="item-label">GitHub</span>
+                                    <span class="item-val">github.com/omar2004khaled</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/omar-khaled-ba44842b1/" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+                                <div class="icon-wrap"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="item-text">
+                                    <span class="item-label">LinkedIn</span>
+                                    <span class="item-val">linkedin.com/in/omar-khaled-ba44842b1</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Omar Khaled Hussein. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="mailto:omar2004khaled@gmail.com" aria-label="Email Omar"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+201229163802" aria-label="Call Omar"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://github.com/omar2004khaled" target="_blank" rel="noopener noreferrer" aria-label="Omar's GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/omar-khaled-ba44842b1/" target="_blank" rel="noopener noreferrer" aria-label="Omar's LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
