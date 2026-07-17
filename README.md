@@ -1,108 +1,107 @@
-# Professional Developer Portfolio - Omar Khaled Hussein
+# DevOps Engineer Internship Week 1 Assignment
 
-A clean, responsive, and light/dark theme-enabled one-page portfolio website designed for developers, systems engineers, and DevOps professionals. This project demonstrates structured, semantic HTML5, vanilla CSS3 styling, and clean JavaScript interactions without external heavy libraries.
+This repository contains a responsive one-page portfolio website, along with the GitHub, Vercel, DNS, environment variable, and DevOps research work required for the Week 1 assignment.
 
----
+## Project Overview
 
-## 🚀 Technologies Used
+The portfolio is a simple static website built with HTML, CSS, and JavaScript. It includes:
+- a responsive layout
+- a light/dark mode toggle
+- a typewriter-style hero section
+- project and contact sections
+- a CV button that opens the resume PDF in a new tab
 
-- **HTML5**: Structured semantic web pages.
-- **CSS3**: Layout design using Grid & Flexbox, dark/light theme management with CSS variables, custom responsive styling.
-- **JavaScript (ES6+)**: Custom dynamic features (typewriter effect, theme state persistence, scroll-reveal Intersection Observer).
-- **Font Awesome**: Standard vector iconography.
-- **Google Fonts**: "Outfit" typography for general layout, and "JetBrains Mono" for programmatic snippets.
+## Live Project
 
----
+- GitHub Repository: https://github.com/omar2004khaled/Portfolio
+- Vercel Live URL: https://portfolio-chi-orcin-82.vercel.app/
 
-## 📁 Directory Structure
+## Task 1 – Portfolio Website
 
-```text
-portfolio/
-│
-├── index.html        # Main semantic structural code
-├── style.css         # Styling rules, layouts, responsive rules, colors, themes
-├── script.js        # Theme switching, typewriter effect, viewport scroll-reveal
-└── README.md         # Documentation & deployment workflows (this file)
-```
+The portfolio was built locally and tested by opening the page in a browser. It runs without build tools or package installation.
 
----
+## Task 2 – GitHub Repository and Branches
 
-## 💻 Running the Project Locally
+The project was pushed to GitHub and the following branches were created:
+- main
+- development
+- production/staging
 
-No compilation, bundlers, or package installations are required. To launch the site locally:
+## Task 3 – Vercel Deployment
 
-### Option A: Standard Launch
-Double-click `index.html` inside the `portfolio` folder to open it directly in any modern web browser.
+The project was deployed on Vercel successfully. The live URL is working and returns an HTTP 200 response.
 
-### Option B: Local Development Server (Recommended)
-If using Visual Studio Code, use the **Live Server** extension to launch a local development server at `http://localhost:5500`. Alternatively, if you have Node.js installed, run:
-```bash
-npx serve .
-```
+## Task 4 – DNS Research
 
----
+A custom domain was not purchased for this assignment, so the project was deployed using the free Vercel URL.
 
-## ☁️ Deployment Instructions
+If a custom domain is owned later, the DNS records required by Vercel would typically be:
+- A Record: host `@` → `76.76.21.21`
+- CNAME Record: host `www` → `cname.vercel-dns.com`
+- TXT Record: used for domain ownership verification, with the exact value provided by Vercel
 
-This guide outlines step-by-step instructions for uploading your codebase to **GitHub** and hosting it globally on **Vercel** with automatic continuous delivery (CI/CD).
+Screenshots to include for submission:
+1. Vercel project domain page
+2. DNS settings page from the domain provider
+3. Verified domain status in Vercel
 
-### Part 1: Version Control with Git & GitHub
+## Task 5 – Environment Variables
 
-1. **Initialize Git Repository**
-   Open your terminal inside the `portfolio` directory and run:
-   ```bash
-   git init
-   ```
+A sample environment file was created as [.env.example](.env.example).
 
-2. **Stage and Commit Code**
-   Stage all files and make the initial commit:
-   ```bash
-   git add .
-   git commit -m "Initial commit: Create responsive portfolio structure, styles, and scripts"
-   ```
+Why `.env` should never be committed:
+- it may contain secret keys and private credentials
+- it can expose sensitive information publicly
+- it can create security risks if the repository is shared
 
-3. **Configure Branch Name**
-   Ensure your main branch is named `main`:
-   ```bash
-   git branch -M main
-   ```
+The real `.env` file is ignored by [.gitignore](.gitignore).
 
-4. **Create a GitHub Repository**
-   - Go to [github.com](https://github.com) and sign in.
-   - Click the **New** repository button.
-   - Name it `portfolio` (or your preferred name).
-   - Keep the repository **Public** (required for easy Vercel integration).
-   - Do **NOT** initialize with a README, `.gitignore`, or License (as we already have files locally).
-   - Click **Create repository**.
+## Task 6 – DevOps Research
 
-5. **Link and Push to GitHub**
-   Copy the remote repository URL from GitHub and run:
-   ```bash
-   git remote add origin <YOUR_GITHUB_REPO_URL>
-   git push -u origin main
-   ```
+### GitHub
+GitHub is a platform for storing Git repositories online. It is used for version control, collaboration, and managing branches.
 
----
+### Vercel
+Vercel is a cloud platform for deploying web applications. It connects with GitHub and publishes projects automatically.
 
-### Part 2: Hosting on Vercel (CI/CD)
+### DNS
+DNS translates domain names into IP addresses so browsers can find websites.
 
-Vercel provides automated deployments linked to your GitHub repository. Every time you push a change to GitHub, Vercel will automatically redeploy the latest version.
+### Domains
+Domains are the website addresses users enter, such as `example.com`.
 
-1. **Sign In to Vercel**
-   - Go to [vercel.com](https://vercel.com) and click **Sign Up** or **Log In**.
-   - Choose **Continue with GitHub** to link your accounts.
+### .gitignore
+`.gitignore` tells Git which files should not be uploaded to the repository. It is commonly used for local files, build folders, and environment files.
 
-2. **Import Repository**
-   - In the Vercel dashboard, click **Add New...** and select **Project**.
-   - Find your `portfolio` repository in the list and click **Import**.
+### Build Command
+The build command is used to prepare a project for deployment. For this portfolio, no build step was needed because it is a static HTML/CSS/JS website.
 
-3. **Configure Build Settings**
-   - Since this is a static HTML/CSS/JS site, **no build configuration is needed**.
-   - Under **Framework Preset**, select **Other** (it should auto-detect this).
-   - **Root Directory**: Leave it as `./` (or `portfolio/` depending on how your repo is set up).
-   - Leave Build and Output Settings as default.
-   - Click **Deploy**.
+### Install Command
+The install command is used to install project dependencies. For this portfolio, no package installation was required.
 
-4. **Review Status**
-   - Within seconds, Vercel will build and deploy your website.
-   - Once completed, you will receive a production deployment link (e.g., `https://portfolio-username.vercel.app`).
+### Environment Variables
+Environment variables store configuration values such as API keys and secrets outside the source code.
+
+## Task 7 – AI Learning Summary
+
+Using ChatGPT/Cursor, I learned how to deploy an application on Ubuntu with Nginx and PM2.
+
+The main steps include:
+1. update the Ubuntu server
+2. install Node.js and npm
+3. install Nginx
+4. install PM2
+5. upload the app to the server
+6. start the app with PM2
+7. configure Nginx as a reverse proxy
+8. verify the deployment in the browser
+
+This learning experience helped me understand how to combine GitHub, deployment platforms, and server configuration in a practical DevOps workflow.
+
+## How to Run Locally
+
+Open [index.html](index.html) in a browser, or use a live server extension such as Live Server in VS Code.
+
+## Notes
+
+This assignment was completed as a self-learning DevOps project using Git, GitHub, Vercel, and AI-assisted development tools.
